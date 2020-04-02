@@ -1,0 +1,27 @@
+/* COnfigurções visuais da página */
+
+.logon-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh; /* ocupa a altura toda */
+    margin: 0 auto; /* Contudo fica cnetralizado */
+
+    display:  flex; /* o Flex facilita os alinhamentos  - Faz também com que os elementos fiquem um do lado do outro*/
+    align-items: center;        /* Alinha Verticalmente */
+    justify-content: space-between;    /* Alinha Horizontalmente */
+}
+
+.logon-container section.form {
+    width: 100%;
+    max-width: 320px; /* 100% e max são pensados também para a responsividade */
+    margin-right: 30px; /* Distância lateral dos objetos (já que serão posicionados "lado a lado") */
+}
+
+.logon-container section.form form {
+    margin-top: 100px; /* Distancia da logo para o formulário */
+}
+
+.logon-container section.form form h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
