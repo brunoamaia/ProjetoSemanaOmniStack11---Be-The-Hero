@@ -11,7 +11,7 @@ module.exports = {  // Exportar o resultado da ação seleionada
 
         const incidents = await connection('incidents')
             .join('ongs', 'ongs.id', '=', 'incidents.ong_id')       // Trazer os casos da ONG que possuem o ID do caso
-            .limit(5)       // Quantidade a ser exibida em cada pagina
+            .limit(6)       // Quantidade a ser exibida em cada pagina
             .offset( (page-1)*5 )   // quantidade de casos a serem pulados
             .select([                           // Como os dois Bancos de Dados tem "id", devemos pegar apenas o do caso, senão o "id" da ONG irá sobreescrever
                 'incidents.*',      // Pega todos os dados do caso

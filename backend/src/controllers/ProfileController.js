@@ -9,5 +9,5 @@ module.exports = {  // Exportar o resultado da ação seleionada
             .select('*');
 
         return response.json(incidents);
-    }
+    },
 }
