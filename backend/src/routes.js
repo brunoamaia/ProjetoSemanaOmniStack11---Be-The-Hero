@@ -23,7 +23,7 @@ routes.get('/incidents', IncidentController.index);   // Listar os casos
 routes.delete('/incidents/:id', IncidentController.delete); // Apagar uma caso
 
 // Rotas relacionadas ao listamento de casos de uma ONG específica
-routes.get('/profiles', ProfileController.index);
+routes.get('/profile', ProfileController.index);
 
 module.exports = routes; // Forma de exportar uma variável no Node. No caso, as rotas
 
